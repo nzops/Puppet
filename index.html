@@ -36,9 +36,20 @@
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p>CentOS 6.x</p>
+
+<pre><code>rpm -ivh http://yum.puppetlabs.com/puppetlabs-release-el-6.noarch.rpm
+yum -y install http://yum.theforeman.org/releases/1.7/el6/x86_64/foreman-release.rpm
+rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+yum install centos-release-SCL
+</code></pre>
+
+<p>CentOS 7.x</p>
+
+<pre><code>rpm -ivh http://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm
+yum -y install http://yum.theforeman.org/releases/1.7/el6/x86_64/foreman-release.rpm
+rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+yum install centos-release-SCL$ cd your_repo_root/repo_name
 </code></pre>
 
 <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
